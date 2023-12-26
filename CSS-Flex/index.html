@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 95%;
+        margin: auto;
+        border: dotted;
+        background-color: yellow;
+      }
+      .first-child {
+        width: 30%;
+        margin: 10px;
+        background-color: blue;
+        border: dotted;
+        padding: 10px;
+      }
+      .wrap{
+        display: flex;
+      }
+      .second-child{
+        margin: 10px;
+        background-color: white;
+        padding: 10px;
+      }
+      .row{
+        padding:10px
+      }
+      @media (max-width: 780px) {
+           
+            .row{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+        @media (max-width: 480px) {
+           
+           .row{
+               display: grid;
+               grid-template-columns: repeat(1,1fr);
+           }
+       }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+         <div class="row">  
+      <div class="wrap">
+        <div class="first-child">
+          <p>Image</p>
+        </div>
+        <div class="second-child">
+          <h1 style=" border: dotted;">Title</h1>
+          <p style=" border: dotted;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            necessitatibus, quia corrupti eligendi eum reiciendis illum quo
+            voluptatem nobis fuga nesciunt tenetur sint at officia? Aspernatur
+            reprehenderit non cupiditate dolor?
+          </p>
+          <a style=" border: dotted;" href="https://getcssscan.com/css-box-shadow-examples">Read More</a>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="first-child">
+          <p>Image</p>
+        </div>
+        <div class="second-child">
+          <h1 style=" border: dotted;">Title</h1>
+          <p style=" border: dotted;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            necessitatibus, quia corrupti eligendi eum reiciendis illum quo
+            voluptatem nobis fuga nesciunt tenetur sint at officia? Aspernatur
+            reprehenderit non cupiditate dolor?
+          </p>
+          <a style=" border: dotted;" href="https://getcssscan.com/css-box-shadow-examples">Read More</a>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="first-child">
+          <p>Image</p>
+        </div>
+        <div class="second-child">
+          <h1 style=" border: dotted;">Title</h1>
+          <p style=" border: dotted;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            necessitatibus, quia corrupti eligendi eum reiciendis illum quo
+            voluptatem nobis fuga nesciunt tenetur sint at officia? Aspernatur
+            reprehenderit non cupiditate dolor?
+          </p>
+          <a style=" border: dotted;" href="https://getcssscan.com/css-box-shadow-examples">Read More</a>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="first-child">
+          <p>Image</p>
+        </div>
+        <div class="second-child">
+          <h1 style=" border: dotted;">Title</h1>
+          <p style=" border: dotted;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            necessitatibus, quia corrupti eligendi eum reiciendis illum quo
+            voluptatem nobis fuga nesciunt tenetur sint at officia? Aspernatur
+            reprehenderit non cupiditate dolor?
+          </p>
+          <a style=" border: dotted;" href="https://getcssscan.com/css-box-shadow-examples">Read More</a>
+        </div>
+      </div>
+    </div>
+</div>
+  </body>
+</html>
