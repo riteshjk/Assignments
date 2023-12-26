@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            background-color: black;
+            width: 90%;
+            margin: auto;
+            color: white;
+        }
+        .row{
+            width:90%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .img-responsive{
+            height: 100px;
+            width: 50%;
+            margin-left: -40px;
+            background-color: black;
+        }
+        .text-adj{
+            margin-left: 10px;
+        }
+        .side-adj{
+            width: 100%;
+            height:300px;
+            background-color: blue;
+        }
+        .img-adj{
+            width:300px;
+            height: 300px;
+            margin-top: 60px;
+        }
+        .first-child{
+            width: 50%;
+            padding:40px
+        }
+        .second-child{
+            width: 50%;
+            margin-right:-140px;
+            
+        }
+        .logos{
+            width: 100%;
+            height: 100px;
+        }
+        .mini-container{
+            width: 90%;
+            margin: auto;
+            background-color:white;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 10px;
+        }
+        .r-text{
+            text-align: center;
+        }
+        .profile{
+            width: 50%;
+            height: 100px;
+        }
+        .user{
+            margin:20px
+        }
+        .user-data{
+            width: 90%;
+            margin:auto;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+        footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+@media (min-width: 1024px) {
+    .row {
+        width: 90%;
+    }
+    .first-child {
+        width: 60%;
+        padding: 40px;
+    }
+    .second-child {
+        width: 40%;
+        margin-right: -140px;
+    }
+}
+
+/* Media query for medium screens */
+@media (max-width: 1023px) {
+    .first-child {
+        width: 100%;
+        padding: 20px;
+    }
+    .second-child {
+        width: 100%;
+        margin-right: 0;
+    }
+    .row {
+        flex-direction: column-reverse;
+    }
+    .img-responsive {
+        width: 100%;
+        margin-left: 0;
+    }
+    .img-adj {
+        width: 100%;
+        margin-top: 0;
+    }
+    .side-adj {
+        height: auto;
+    }
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+    .user-data {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="row">
+            <div class="first-child">
+                <img src="https://www.seoclerk.com/pics/677755-210axC1562182518.jpg" alt="logo" class="img-responsive">
+                <div class="text-adj">
+
+               
+                <h1 >THE MOST</h1>
+                <h1 >INSIGHTFUL</h1>
+                <h1 style="color:purple">MARKETING</h1>
+                <h1 style="color:purple">CONFERENCE</h1>
+                <h1 >IN EUROPE</h1>
+                <p >Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <p >get in touch with us</p>
+                <div>
+                    <button style="background-color: blue; color: white;">REGISTER NOW</button>
+                    <button>LEARN NOW</button>
+                </div>
+            </div>
+            </div>
+            <div class="second-child">
+                <div class="side-adj">
+                    <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?q=80&w=465&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="img-adj">
+                </div>
+            </div>
+        </div>
+        <p style="text-align:center">SPONSERD BY ME</p>
+        <div class="mini-container">
+            <div >
+                <img src="https://1000logos.net/wp-content/uploads/2021/05/Google-logo.png" alt="" class="logos">
+            </div>
+            <div >
+                <img src="https://cdn.mos.cms.futurecdn.net/6dDoc8GV9fYUPExgLYPqqT-650-80.jpg.webp" alt="" class="logos">
+            </div>
+            <div >
+                <img src="https://1000logos.net/wp-content/uploads/2021/05/Google-logo.png" alt="" class="logos">
+            </div>
+            <div >
+                <img src="https://cdn.mos.cms.futurecdn.net/6dDoc8GV9fYUPExgLYPqqT-650-80.jpg.webp" alt="" class="logos">
+            </div>
+        </div>
+        <div class="r-text">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing </p>
+        <h1>MEET OUR SPEAKERS</h1>
+    </div> 
+    <div class="user-data">
+        <div class="user">
+            <img src="https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=1024x1024&w=is&k=20&c=-mUWsTSENkugJ3qs5covpaj-bhYpxXY-v9RDpzsw504=" alt="" class="profile">
+            <h3>JOHN</h3>
+            <h3 style="color: purple;">BRAND</h3>
+            <p style="font-size:xx-small">BRAND MANAGAER @AAA</p>
+        </div>
+        <div class="user">
+            <img src="https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=1024x1024&w=is&k=20&c=-mUWsTSENkugJ3qs5covpaj-bhYpxXY-v9RDpzsw504=" alt="" class="profile">
+            <h3>JOHN</h3>
+            <h3 style="color: purple;">BRAND</h3>
+            <p style="font-size:xx-small">BRAND MANAGAER @AAA</p>
+        </div>
+        <div class="user">
+            <img src="https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=1024x1024&w=is&k=20&c=-mUWsTSENkugJ3qs5covpaj-bhYpxXY-v9RDpzsw504=" alt="" class="profile">
+            <h3>JOHN</h3>
+            <h3 style="color: purple;">BRAND</h3>
+            <p style="font-size:xx-small">BRAND MANAGAER @AAA</p>
+        </div>
+        <div class="user">
+            <img src="https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=1024x1024&w=is&k=20&c=-mUWsTSENkugJ3qs5covpaj-bhYpxXY-v9RDpzsw504=" alt="" class="profile">
+            <h3>JOHN</h3>
+            <h3 style="color: purple;">BRAND</h3>
+            <p style="font-size:xx-small">BRAND MANAGAER @AAA</p>
+        </div>
+        <div class="user">
+            <img src="https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=1024x1024&w=is&k=20&c=-mUWsTSENkugJ3qs5covpaj-bhYpxXY-v9RDpzsw504=" alt="" class="profile">
+            <h3>JOHN</h3>
+            <h3 style="color: purple;">BRAND</h3>
+            <p style="font-size:xx-small">BRAND MANAGAER @AAA</p>
+        </div>
+        <div class="user">
+            <img src="https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=1024x1024&w=is&k=20&c=-mUWsTSENkugJ3qs5covpaj-bhYpxXY-v9RDpzsw504=" alt="" class="profile">
+            <h3>JOHN</h3>
+            <h3 style="color: purple;">BRAND</h3>
+            <p style="font-size:xx-small">BRAND MANAGAER @AAA</p>
+        </div>
+        <div class="user">
+            <img src="https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=1024x1024&w=is&k=20&c=-mUWsTSENkugJ3qs5covpaj-bhYpxXY-v9RDpzsw504=" alt="" class="profile">
+            <h3>JOHN</h3>
+            <h3 style="color: purple;">BRAND</h3>
+            <p style="font-size:xx-small">BRAND MANAGAER @AAA</p>
+        </div>
+        <div class="user">
+            <img src="https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=1024x1024&w=is&k=20&c=-mUWsTSENkugJ3qs5covpaj-bhYpxXY-v9RDpzsw504=" alt="" class="profile">
+            <h3>JOHN</h3>
+            <h3 style="color: purple;">BRAND</h3>
+            <p style="font-size:xx-small">BRAND MANAGAER @AAA</p>
+        </div>
+    </div>
+    <footer>
+        <p>This is a footer.</p>
+    </footer>
+    </div>
+</body>
+</html>
